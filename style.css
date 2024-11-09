@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,221,174);
+    background: linear-gradient(128deg, rgba(255,221,174,1) 0%, rgba(165,217,255,1) 100%);
+    background-size: 250% 250%;
+    animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.SquarClock{
+    width: 220px;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+    background-color: rgba(255, 255, 255, 0.226);
+    text-align: center;
+    padding: 45px 0;
+    color: rgb(71, 71, 71);
+    font-weight: 600;
+    font-size: 100px;
+}
+
+.time{
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.226);
+    font-weight: 600;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 5px;
+
+}
+
+.colom{
+    font-size: 100px;
+    color: rgb(71, 71, 71);
+}
